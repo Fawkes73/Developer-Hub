@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Layout</title>
+    <!-- Import Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="../../styles/home.css">
+  <script src="https://cdn.redocly.com/redoc/v2.2.0/bundles/redoc.standalone.js"></script>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="" style="height: 2.5rem; width: 100%; border: 1px solid red;" ></header>
+
+  <section class="container-home">
+
+    <!-- left side -->
+    <aside class="left-sidebar"></aside>
+    
+    <!-- middle main -->
+<main class="main-container">
+  <h1 class="title">5centsCDN API Documentation</h1>
+  <p class="subtitle">Explore sections of the API documentation and guides.</p>
+  <div id="cards-container" class="cards-container"></div>
+ 
+ <script>
+    // import cards from "./constants/home"
+    const cards = [
+  { title: "Introduction", icon: "../assets/home/icon1.svg", link: "./introduction.html" },
+  { title: "Authentication", icon: "../public/assets/home/icon2.svg", link: "./authentication.html" },
+  { title: "Livestreams", icon: "../public/assets/home/icon3.svg", link: "./livestreams.html" },
+  { title: "Zones", icon: "../public/assets/home/icon4.svg", link: "./zones.html" },
+  { title: "Edge Rules", icon: "../public/assets/home/icon5.svg", link: "./edgeRules.html" },
+  { title: "Video Encoding", icon: "../public/assets/home/icon6.svg", link: "./videoEncoding.html" },
+  { title: "SimpleDNS", icon: "../public/assets/home/icon7.svg", link: "./simpleDNS.html" },
+  { title: "Traffic Director", icon: "../public/assets/home/icon8.svg", link: "./trafficDirector.html" },
+  { title: "Accounts", icon: "../public/assets/home/icon9.svg", link: "./accounts.html" },
+  { title: "Analytics", icon: "../public/assets/home/icon10.svg", link: "./analytics.html" },
+  { title: "YouTube Sync", icon: "../public/assets/home/icon11.svg", link: "./youtubeSync.html" },
+];
+
+
+    const container = document.getElementById("cards-container");
+
+    // cards.forEach(({ title, icon, link }) => {
+    //   const card = document.createElement("div");
+    //   card.className = "bg-transparent border border-white/10 rounded-[20px] p-6 flex flex-col items-start space-y-5 justify-between hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer";
+
+    //   card.innerHTML = `
+    //   <a href="${link}" >
+    //     <div class="w-full flex justify-between items-center">
+    //       <div class="w-9 h-9 flex-shrink-0">
+    //         <img src="${icon}" alt="${title}" class="w-full h-full object-contain" 
+    //           onerror="this.onerror=null; this.src='/assets/default.svg';" />
+    //       </div>
+          
+    //       <div class="w-4 h-4">
+    //         <img src="../public/assets/arrow.svg" alt="arrow" class="w-full h-full object-contain" 
+    //             onerror="this.onerror=null; this.src='/assets/default-arrow.svg';" />
+    //       </div>
+          
+    //       </div>
+    //       <div class="block mt-5 text-base md:text-xl font-semibold">${title}</div>
+    //       </a>
+    //   `;
+
+    //   container.appendChild(card);
+    // });
+    cards.forEach(({ title, icon, link }) => {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  card.innerHTML = `
+    <a href="${link}" class="card-link">
+      <div class="card-header">
+        <div class="card-icon">
+          <img src="${icon}" alt="${title}" class="icon" onerror="this.onerror=null; this.src='/assets/default.svg';" />
+        </div>
+        <div class="card-arrow">
+          <img src="../public/assets/arrow.svg" alt="arrow" class="arrow" onerror="this.onerror=null; this.src='/assets/default-arrow.svg';" />
+        </div>
+      </div>
+      <div class="card-title">${title}</div>
+    </a>
+  `;
+
+  container.appendChild(card);
+});
+
+
+
+  </script>
+</main>
+
+<!-- right side -->
+<aside class="right-sidebar"></aside>
+
+</section>
+
+<!-- Footer -->
+ <footer>
+
+ </footer>
+
+
+</body>
+</html>
