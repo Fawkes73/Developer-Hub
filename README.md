@@ -55,10 +55,10 @@ npm install
 ```
 # 4. Run the dev server
 ```bash
-
 npm run dev
-```bash
+
 ```
+```bash
 Visit http://localhost:3000 to view the app.
 ```
 📦 Build for Production
