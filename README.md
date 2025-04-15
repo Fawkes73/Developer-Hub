@@ -40,8 +40,9 @@ Edit
 
 ## 🛠️ Getting Started
 
-```bash
+
 # 1. Clone the repository
+```bash
 git clone https://github.com/yourusername/developer-hub.git
 
 ```
