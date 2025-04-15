@@ -1,6 +1,8 @@
 {
   "name": "devloper-guide",
   "version": "0.1.0",
+   "author": "Mandar Surve",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
