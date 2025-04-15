@@ -44,16 +44,23 @@ Edit
 # 1. Clone the repository
 git clone https://github.com/yourusername/developer-hub.git
 
+```
 # 2. Navigate to the project folder
+```bash
 cd developer-hub
-
+```
 # 3. Install dependencies
+```bash
 npm install
-
+```
 # 4. Run the dev server
-npm run dev
-Visit http://localhost:3000 to view the app.
+```bash
 
+npm run dev
+```bash
+```
+Visit http://localhost:3000 to view the app.
+```
 📦 Build for Production
 bash
 Copy
@@ -78,4 +85,3 @@ This project is open source under the MIT License.
 🙋‍♂️ Author
 Built with ❤️ by Mandar Surve
 
-```
