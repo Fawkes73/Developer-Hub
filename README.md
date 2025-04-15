@@ -2,7 +2,14 @@
 
 A modern developer dashboard built with **Next.js**, **Tailwind CSS**, and **shadcn/ui** – designed to be fast, accessible, and fully customizable. Manage your tools, docs, and personal workflows in one elegant interface.
 
-![screenshot](./public/preview-image.png)
+
+## Light Mode
+![screenshot](./public/preview-image1.png)
+
+
+
+## Dark Mode
+![screenshot](./public/preview-image2.png)
 
 ---
 
