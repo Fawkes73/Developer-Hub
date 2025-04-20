@@ -3,7 +3,7 @@
 A modern developer dashboard built with **Next.js**, **Tailwind CSS**, and **shadcn/ui** – designed to be fast, accessible, and fully customizable. Manage your tools, docs, and personal workflows in one elegant interface.
 
 ## 🙋‍♂️ Author
-Built with ❤️ by Mandar Surve
+Built with 👨‍💻 by Mandar Surve
 
 ## Preview of the project
 ![screenshot](./public/preview-image3.png)
@@ -81,7 +81,7 @@ npm run build
 npm run start
 
 ```
-🔧 Customization
+## 🔧 Customization
 
 Tailwind config: tailwind.config.js
 
@@ -90,6 +90,11 @@ Theme variables: /styles/globals.css
 Sidebar items: /components/SideNav.tsx
 
 Light/dark theme toggle: /components/ModeToggle.tsx
+
+
+## 🤝 Contributing
+
+Feel free to fork this repository, submit issues, or send pull requests! 🎯
 
 📸 UI Preview
 Include screenshots or a short GIF here
