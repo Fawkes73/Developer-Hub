@@ -23,15 +23,12 @@ A modern developer dashboard built with **Next.js**, **Tailwind CSS**, and **sha
 
 ## 📂 Project Structure
 
-/app # App directory (Next.js 13+) 
-/components # Shared UI components 
-/styles # Global styles (Tailwind + custom vars)
-/pages # Routing (if using pages dir) 
-/public # Static assets /lib # Utilities and helpers
+📂/app # App directory (Next.js 13+) 
+📂/components # Shared UI components 
+📂/styles # Global styles (Tailwind + custom vars)
+📂/pages # Routing (if using pages dir) 
+📂/public # Static assets /lib # Utilities and helpers
 
-yaml
-Copy
-Edit
 
 ---
 ## 🌗 Features
