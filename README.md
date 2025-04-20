@@ -2,6 +2,8 @@
 
 A modern developer dashboard built with **Next.js**, **Tailwind CSS**, and **shadcn/ui** – designed to be fast, accessible, and fully customizable. Manage your tools, docs, and personal workflows in one elegant interface.
 
+## 🙋‍♂️ Author
+Built with ❤️ by Mandar Surve
 
 ## Preview of the project
 ![screenshot](./public/preview-image3.png)
@@ -95,6 +97,12 @@ Include screenshots or a short GIF here
 📄 License
 This project is open source under the MIT License.
 
-🙋‍♂️ Author
-Built with ❤️ by Mandar Surve
 
+If you liked this project, give it a ⭐ and share it!
+
+Let me know if you'd like:
+
+- Deploy instructions via **Netlify/Vercel**
+- Better screenshots & badge support
+
+Happy Coding 💻🚀
