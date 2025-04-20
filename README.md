@@ -4,7 +4,7 @@ A modern developer dashboard built with **Next.js**, **Tailwind CSS**, and **sha
 
 
 ## Preview of the project
-![screenshot](./public/preview-image.png)
+![screenshot](./public/preview-image3.png)
 
 
 
@@ -30,7 +30,6 @@ Copy
 Edit
 
 ---
-
 ## 🌗 Features
 
 - 🔥 Dark/light theme support via `next-themes` & shadcn/ui
