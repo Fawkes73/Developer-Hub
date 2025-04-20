@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
-import { ChevronsUpDown } from "lucide-react";
-import { ModeToggle } from "@/pages/Components/ModeToggle"; // Import ModeToggle component
 
 // Define the type for the props in the component
 interface SideNavProps {
@@ -50,22 +48,24 @@ const SideNav: React.FC<SideNavProps> = ({ onContentChange }) => {
               <Collapsible open={!!openItems[title]} onOpenChange={() => handleToggle(title)}>
                 <div className="flex items-center justify-between">
                   <CollapsibleTrigger asChild>
-                    <Button variant="ghost" className="w-full justify-between px-2 py-1 text-left text-sm font-semibold">
+                    <Button
+                      variant="ghost"
+                      className="w-full justify-start px-2 py-1 text-left text-sm font-semibold hover:shadow-md hover:shadow-gray-500/30"
+                    >
                       {title}
-                      <ChevronsUpDown className="h-4 w-4" />
                     </Button>
                   </CollapsibleTrigger>
                 </div>
                 <CollapsibleContent className="ml-4 mt-1 space-y-1">
-                  {sublinks.map((sub) => (
+                  {sublinks.map((sub: string) => (
                     <a
                       key={sub}
                       href="#"
                       onClick={(e) => {
-                        e.preventDefault();
-                        handleSublinkClick(title, sub);
+                        e.preventDefault()
+                        handleSublinkClick(title, sub)
                       }}
-                      className="block text-sm text-blue-600 hover:underline"
+                      className="block text-sm hover:shadow-md hover:shadow-gray-500/30 px-1 py-0.5 rounded"
                     >
                       {sub}
                     </a>
@@ -75,8 +75,8 @@ const SideNav: React.FC<SideNavProps> = ({ onContentChange }) => {
             ) : (
               <Button
                 variant="ghost"
-                className="w-full text-left px-2 py-1 text-sm font-semibold"
-                onClick={() => handleButtonClick(title)} // Update content on button click
+                className="w-full text-left px-2 py-1 text-sm font-semibold hover:shadow-md hover:shadow-gray-500/30"
+                onClick={() => handleButtonClick(title)}
               >
                 {title}
               </Button>
@@ -84,11 +84,6 @@ const SideNav: React.FC<SideNavProps> = ({ onContentChange }) => {
           </li>
         ))}
       </ul>
-
-      {/* Add the ModeToggle button */}
-      <div className="mt-4">
-        <ModeToggle />
-      </div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ import {
 
 export function FormCard() {
   return (
-    <Card className="w-[450px]">
+    <Card className="w-[450px] bg-background text-foreground">
       <CardHeader>
         <CardTitle>Create project</CardTitle>
         <CardDescription>Deploy your new project in one-click.</CardDescription>

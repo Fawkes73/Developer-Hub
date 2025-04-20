@@ -5,6 +5,8 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable"
 import SideNav from "../Components/SideNav"
+import { Header } from "../Components/Header"
+import Footer from "../Components/Footer"
 
 const DeveloperHub = () => {
   const [activeContent, setActiveContent] = useState("Main Content Area")
@@ -14,34 +16,29 @@ const DeveloperHub = () => {
   }
 
   return (
-    <div className="h-screen w-screen overflow-hidden">
-      <ResizablePanelGroup direction="vertical" className="h-full w-full">
-        {/* Header */}
-        <ResizablePanel defaultSize={10} minSize={8} maxSize={15}>
-          <div className="h-full w-full flex items-center justify-center border-b bg-gray-100 p-4">
-            <span className="font-semibold text-lg">Header</span>
-          </div>
-        </ResizablePanel>
+    <div className="flex flex-col h-screen w-screen overflow-hidden">
+      {/* Header at the top */}
+      <Header />
 
-        <ResizableHandle />
-
+      {/* Main Resizable Body */}
+      <ResizablePanelGroup direction="vertical" className="flex-grow">
         {/* Middle section with SideNav and Content */}
-        <ResizablePanel defaultSize={80}>
+        <ResizablePanel defaultSize={90}>
           <ResizablePanelGroup direction="horizontal" className="h-full w-full">
             {/* SideNav */}
             <ResizablePanel defaultSize={20} minSize={15} maxSize={30}>
-              <div className="h-full w-full border-r bg-gray-50 p-4 overflow-auto">
+              <div className="h-full w-full border-r p-4 overflow-auto">
                 <SideNav onContentChange={handleContentChange} />
               </div>
             </ResizablePanel>
 
             <ResizableHandle withHandle />
 
-            {/* Content */}
+            {/* Main Content Area */}
             <ResizablePanel defaultSize={80}>
               <div className="h-full w-full p-6 overflow-auto">
                 <h2 className="text-xl font-bold mb-4">Content Area</h2>
-                <p className="text-gray-700">{activeContent}</p>
+                <p className="text-muted-foreground">{activeContent}</p>
               </div>
             </ResizablePanel>
           </ResizablePanelGroup>
@@ -49,13 +46,12 @@ const DeveloperHub = () => {
 
         <ResizableHandle />
 
-        {/* Footer */}
-        <ResizablePanel defaultSize={10} minSize={8} maxSize={15}>
-          <div className="h-full w-full flex items-center justify-center border-t bg-gray-100 p-4">
-            <span className="font-semibold text-lg">Footer</span>
-          </div>
-        </ResizablePanel>
+
+
       </ResizablePanelGroup>
+      {/* Footer */}
+      <Footer />
+
     </div>
   )
 }

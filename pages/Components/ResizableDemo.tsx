@@ -8,7 +8,7 @@ export function ResizableDemo() {
   return (
     <ResizablePanelGroup
       direction="horizontal"
-      className="min-h-[200px] max-w-md rounded-lg border md:min-w-[450px]"
+      className="min-h-[200px] max-w-md rounded-lg border md:min-w-[450px] bg-foreground text-background"
     >
       <ResizablePanel defaultSize={100}>
         <ResizablePanelGroup direction="vertical" className="h-full w-full">
@@ -18,7 +18,7 @@ export function ResizableDemo() {
         </ResizablePanelGroup>
       </ResizablePanel>
       <ResizablePanel defaultSize={25}>
-        <div className="flex h-full items-center justify-center p-6">
+        <div className="flex h-full items-center justify-center p-6 ">
           <span className="font-semibold">Sidebar</span>
         </div>
       </ResizablePanel>
