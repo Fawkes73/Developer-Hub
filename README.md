@@ -70,9 +70,17 @@ Visit http://localhost:3000 to view the app.
 bash
 Copy
 Edit
+
+```bash
 npm run build
+```
+
+```bash
 npm run start
+
+```
 🔧 Customization
+
 Tailwind config: tailwind.config.js
 
 Theme variables: /styles/globals.css
